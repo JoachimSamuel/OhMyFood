@@ -1,0 +1,31 @@
+/*Mobil*/
+*{
+    margin: 0px ;
+}
+
+.header__imglogo{ /*Ajout width justify-content ne fonctionne plus */
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: auto;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.header__location{    
+    background-color: rgba(234, 234, 234, 1);
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__dote{
+    height: 1rem;
+}
+header p{
+    margin-left: 1rem
+}
+
+
