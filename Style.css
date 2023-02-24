@@ -1,22 +1,33 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 h1{
     font-family: 'Shrikhand';
 }
-p{
+h2{
     font-family: 'Roboto';
 }
+p{
+    font-family: 'Roboto';  
+}
+.center__align__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /*Mobil*/
 
-*{
-    margin: 0px ;
+body{
+    background-color: #F7F7F7;
+    margin: 0px;
 }
+
+/*Header*/
 
 .header__imglogo{ /*Ajout width justify-content ne fonctionne plus */
     padding: 1em;
-    display: flex;
-    justify-content: center;
     position: relative;
     z-index: auto;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -27,9 +38,6 @@ p{
     background-color: rgba(234, 234, 234, 1);
     height: 3rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .header__dote{
     height: 1rem;
@@ -39,3 +47,73 @@ header p{
 }
 
 
+/* Section Réservez le menu qui vous convient */
+
+.Réservezlemenu{
+    flex-direction: column;
+}
+.Réservezlemenu h2{
+    margin: 1em 4em 0.5em 4em;
+    text-align: center;
+    font-size: 24px;
+}
+.Réservezlemenu p{
+    margin: 0 4em 1em 4em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.Réservezlemenu__button{
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 1em ;
+    text-decoration: none;
+}
+
+/* Section Fonctionnement */
+.fonctionnement{
+    margin-top: 2rem;
+    background-color: white;
+    height: 27.5rem;
+    padding: 0.5rem 2rem;
+}
+.fonctionnement__align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.fonctionnement__button{
+    display: flex;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 22rem;
+    height: 4rem;
+    margin: 1em;
+}
+.fonctionnement__button:hover{
+    background-color: #F5EDFF;
+}
+.fonctionnement__number{ 
+    position: absolute;   /*POSITION absolute non responsive */
+    margin-right: 23.5rem;
+    background-color:#9356DC;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.fonctionnement__svg{
+    height: 30%;
+}
+.fonctionnement__svg:hover{  /* Regarder comment changer la couleur d'un SVG */
+    height: 50%;
+    color: #9356DC;
+}
+.fonctionnement p{
+    margin-left: 1.5rem;
+}
