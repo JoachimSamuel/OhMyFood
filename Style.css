@@ -74,9 +74,12 @@ header p{
 
 /* Section Fonctionnement */
 .fonctionnement{
-    margin-top: 2rem;
     background-color: white;
-    padding: 0.5rem 2rem;
+    padding: 1em;
+    margin-top: 2em;
+}
+.fonctionnement__title{
+    margin-bottom: 0rem;
 }
 .fonctionnement__align{
     display: flex;
@@ -120,12 +123,15 @@ header p{
 /*Section Restaurants*/
 .restaurants{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1em;
 }
+.restaurants__title{
+    margin-left: 1rem;
+}
 .restaurants__card{
-    width: 95%;
-    height: 17em;
+    aspect-ratio: 4/3;
+    height: 15em;
     margin: 0px auto;
     background-color: white;
     box-shadow: 0px 4px 15px 0px #0000001A;
@@ -150,7 +156,7 @@ header p{
 }
 
 .restaurants__card__image{
-    height:  11em;
+    height: 60%;
     position: relative;
     overflow: hidden;
     border-radius: 2em 2em 0 0;
@@ -161,6 +167,7 @@ header p{
 .restaurants__card__body{
     text-align: start;
     padding-left: 1em;
+    
 }
 .restaurants__card__name{
     font-family: 'Roboto';
@@ -171,4 +178,26 @@ header p{
     font-weight: 300;
     color: black;
    margin-top: -0.5em;
+}
+
+/*Footer*/
+.footer{
+    margin-top: 2em;
+    background-color: #353535;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.footer h3{
+    font-family: 'Shrikhand';
+    color:white;
+    margin-left: 2em;
+}
+.footer__ul{
+    margin-top: -1rem;
+}
+.footer__ul__li{
+    color: white;
+    list-style: none;
+
 }
