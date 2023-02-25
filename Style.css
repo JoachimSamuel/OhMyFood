@@ -76,7 +76,6 @@ header p{
 .fonctionnement{
     margin-top: 2rem;
     background-color: white;
-    height: 27.5rem;
     padding: 0.5rem 2rem;
 }
 .fonctionnement__align{
@@ -116,4 +115,60 @@ header p{
 }
 .fonctionnement p{
     margin-left: 1.5rem;
+}
+
+/*Section Restaurants*/
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.restaurants__card{
+    width: 95%;
+    height: 17em;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px #0000001A;
+    border-radius: 2em;
+}
+.restaurants__card a{
+    text-decoration: none;
+}
+                    /* Ajouter hover__card Ici */
+.restaurants__card__nouveau{
+    display: none;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-left: 20em;
+    margin-top: 1em;
+    height: 1em;
+    background-color: #99E2D0;
+    color: #008766;
+
+    
+}
+
+.restaurants__card__image{
+    height:  11em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2em 2em 0 0;
+}
+.restaurants__card__image img{
+    width: 100%;
+}
+.restaurants__card__body{
+    text-align: start;
+    padding-left: 1em;
+}
+.restaurants__card__name{
+    font-family: 'Roboto';
+    color: black;
+  
+}
+.restaurants__card__place {
+    font-weight: 300;
+    color: black;
+   margin-top: -0.5em;
 }
