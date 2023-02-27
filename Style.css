@@ -25,13 +25,18 @@ body{
 }
 
 /*Header*/
+.header{
+   
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
 
 .header__imglogo{ /*Ajout width justify-content ne fonctionne plus */
     padding: 1em;
     position: relative;
     z-index: auto;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-
+}
+.header__arrow{
+    width: 3em;
 }
 
 .header__location{    
@@ -192,6 +197,9 @@ header p{
     font-family: 'Shrikhand';
     color:white;
     margin-left: 2em;
+}
+footer a{
+    text-decoration: none;
 }
 .footer__ul{
     margin-top: -1rem;
