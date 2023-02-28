@@ -20,8 +20,11 @@ p{
 /*Mobil*/
 
 body{
+    display: flex;
+    flex-direction: column;
     background-color: #F7F7F7;
     margin: 0px;
+    min-height: 100vh;
 }
 
 /*Header*/
@@ -58,7 +61,7 @@ header p{
     flex-direction: column;
 }
 .Réservezlemenu h2{
-    margin: 1em 4em 0.5em 4em;
+   width: 20ch;
     text-align: center;
     font-size: 24px;
 }
@@ -68,13 +71,17 @@ header p{
     font-weight: 300;
 }
 
-.Réservezlemenu__button{
+.Réservezlemenu button{
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+    border: none;
     padding: 1em ;
+}
+.Réservezlemenu button a{
     text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
 }
 
 /* Section Fonctionnement */
@@ -103,6 +110,7 @@ header p{
 }
 .fonctionnement__button:hover{
     background-color: #F5EDFF;
+    color: #9356DC;
 }
 .fonctionnement__number{ 
     position: absolute;   /*POSITION absolute non responsive */
@@ -135,8 +143,8 @@ header p{
     margin-left: 1rem;
 }
 .restaurants__card{
-    aspect-ratio: 4/3;
-    height: 15em;
+    aspect-ratio: 5/3;
+    width: 21em;
     margin: 0px auto;
     background-color: white;
     box-shadow: 0px 4px 15px 0px #0000001A;
@@ -146,19 +154,7 @@ header p{
     text-decoration: none;
 }
                     /* Ajouter hover__card Ici */
-.restaurants__card__nouveau{
-    display: none;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    margin-left: 20em;
-    margin-top: 1em;
-    height: 1em;
-    background-color: #99E2D0;
-    color: #008766;
 
-    
-}
 
 .restaurants__card__image{
     height: 60%;
@@ -166,13 +162,23 @@ header p{
     overflow: hidden;
     border-radius: 2em 2em 0 0;
 }
+.new ::before  {
+    content: "Nouveau";
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 0.5rem;
+}
 .restaurants__card__image img{
     width: 100%;
 }
 .restaurants__card__body{
     text-align: start;
     padding-left: 1em;
-    
+    position: relative;
 }
 .restaurants__card__name{
     font-family: 'Roboto';
@@ -184,11 +190,24 @@ header p{
     color: black;
    margin-top: -0.5em;
 }
+.fa-solid{
+    font-weight: 100;
+}
+.restaurants__card__heart{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 1.5em;
+    
+}
+.restaurants__card__heart:hover{ 
+    color:#FF79DA;
+}
 
 /*Footer*/
 .footer{
     margin-top: 2em;
-    background-color: #353535;
+    background-color:#353535;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -200,12 +219,16 @@ header p{
 }
 footer a{
     text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 .footer__ul{
     margin-top: -1rem;
+   
 }
 .footer__ul__li{
     color: white;
     list-style: none;
-
+   
 }

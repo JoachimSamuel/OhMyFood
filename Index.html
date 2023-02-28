@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Voir utilisation font awesome svg ou link ? + chnager la couleur d'un svg-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="Style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>OhMyFood</title>
 </head>
 <body>
     <header class="header">
         <div class="header__imglogo center__align__items">
-        <img src="Images/logo/ohmyfood@2x.svg">
+        <img src="Images/logo/ohmyfood@2x.svg" alt="ohmyfood">
         </div>
         <div class="header__location center__align__items">
         <svg class="header__dote center__align__items" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
@@ -20,7 +22,7 @@
     <section class="Réservezlemenu center__align__items">
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-        <a class="Réservezlemenu__button" href="#Restaurants">Explorer nos restaurants</a>
+        <button><a class="Réservezlemenu__button" href="#Restaurants">Explorer nos restaurants</a></button>
     </section>
     <Section class="fonctionnement">
         <h2 class="fonctionnement__title">Fonctionnement</h2>
@@ -28,80 +30,78 @@
         <div class="fonctionnement__align">
         <div class="fonctionnement__button center__align__items">
         <p class="fonctionnement__number center__align__items">1</p>
-        <svg class="fonctionnement__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H288c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM208 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM288 64H64V384H288V64z"/></svg>
+        <i class="fa-solid fa-mobile"></i>
         <p>Choisissez un restaurant</p>
         </div>
         </div>
         <div class="center__align__items">
             <div class="fonctionnement__button center__align__items">
             <p class="fonctionnement__number center__align__items">2</p>
-            <svg class="fonctionnement__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 144a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM64 464a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48-208a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+            <i class="fa-solid fa-list"></i>
             <p>Composez votre menu</p>
             </div>
             </div>
             <div class="center__align__items">
                 <div class="fonctionnement__button center__align__items">
                 <p class="fonctionnement__number center__align__items">3</p>
-                <svg class="fonctionnement__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M531.6 103.8L474.3 13.1C469.2 5 460.1 0 450.4 0H93.6C83.9 0 74.8 5 69.7 13.1L12.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM483.7 254.9l-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3V384H112V250.6c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3V384v64c0 35.3 28.7 64 64 64H432c35.3 0 64-28.7 64-64V384 252.6c-4 1-8 1.8-12.3 2.3z"/></svg>
+                <i class="fa-solid fa-shop"></i>
                 <p>Dégustez au restaurant</p>
                 </div>
             </div>
         </div>
     </Section>
-    <section >
+    <main >
         <h2 class="restaurants__title" id="Restaurants">Restaurants</h2>
         <div class="restaurants">
         <div class="restaurants__card">
             <a href="Menu-La_Pallete_du_Goût.html">  <!--Ajouter link page corespondante-->
-            <div class="restaurants__card__nouveau"><p>Nouveau</p></div>
-            <div class="restaurants__card__image"><img src="Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"></div>
+            <div class="restaurants__card__image new"><img src="Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"><p><!--Pourquoi devoir rajouter une baalise pour affichage new--></p></div>
             <div class="restaurants__card__body">
                 <div class="restaurants__card__name"><h3>La palette du goût</h3></div>
                 <div class="restaurants__card__place"><p>Ménilmontant</p></div>
-                <div class="restaurants__ card__heart"><!--Ajouter font Awesome coeur--></div> 
+                <div class="restaurants__card__heart"><i class="fa-solid fa-heart"></i></div> 
             </div>
             </a>
         </div>
         <div class="restaurants__card">
             <a href="">  <!--Ajouter link page corespondante-->
-            <div class="restaurants__card__nouveau"><p>Nouveau</p></div>
-            <div class="restaurants__card__image"><img src="Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La palette du goût"></div>
+            <div class="restaurants__card__image new"><img src="Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"><p></p></div>
             <div class="restaurants__card__body">
                 <div class="restaurants__card__name"><h3>La note enchantée</h3></div>
                 <div class="restaurants__card__place"><p>Charonne</p></div>
-                <div class="restaurants__ card__heart"><!--Ajouter font Awesome coeur--></div> 
+                <div class="restaurants__card__heart"><i class="fa-solid fa-heart"></i></div> 
             </div>
             </a>
         </div>
         <div class="restaurants__card">
             <a href="">  <!--Ajouter link page corespondante-->
-            <div class="restaurants__card__image"><img src="Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du goût"></div>
+            <div class="restaurants__card__image"><img src="Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"></div>
             <div class="restaurants__card__body">
                 <div class="restaurants__card__name"><h3>À la française</h3></div>
                 <div class="restaurants__card__place"><p>Cité Rouge</p></div>
-                <div class="restaurants__ card__heart"><!--Ajouter font Awesome coeur--></div> 
+                <div class="restaurants__card__heart"><i class="fa-solid fa-heart"></i></div> 
             </div>
             </a>
         </div>
         <div class="restaurants__card">
             <a href="">  <!--Ajouter link page corespondante-->
-            <div class="restaurants__card__image"><img src="Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La palette du goût"></div>
+            <div class="restaurants__card__image"><img src="Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"></div>
             <div class="restaurants__card__body">
                 <div class="restaurants__card__name"><h3>Le délice des sens</h3></div>
                 <div class="restaurants__card__place"><p>Folie-Méricourt</p></div>
-                <div class="restaurants__ card__heart"><!--Ajouter font Awesome coeur--></div> 
+                <div class="restaurants__card__heart"><i class="fa-solid fa-heart"></i></div> <!--PB avec le font wheigt qui modifie tout les fa-solide -->
             </div>
             </a>
         </div>
         </div>
-    </section>
+    </main>
     <footer class="footer">
         <h3>ohmyfood</h3>
                 <ul class="footer__ul">
-                    <a href="#"><li class="footer__ul__li"><!--Ajouter font Awsomecouvert--> <p>Proposer un restaurant</p></li></a>
-                    <a href="#"><li class="footer__ul__li"><!--Ajouter font Awsomecouvert--> <p>Devenir partenaire</p></li></a>
-                    <a href="#"><li class="footer__ul__li"><p>Mentions légale</p></li></a>
-                    <a href="#"><li class="footer__ul__li"><p>Cotact</p></li></a>
+                    <li class="footer__ul__li"><a href="#"><i class="fa-solid fa-utensils"></i></i> <p>Proposer un restaurant</p></a></li>
+                    <li class="footer__ul__li"><a href="#"><i class="fa -solid fa-handshake-angle"></i> <p>Devenir partenaire</p></a></li>
+                    <li class="footer__ul__li"><a href="#"><p>Mentions légale</p></a></li>
+                    <li class="footer__ul__li"><a href="#"><p>Contact</p></a></li>  <!--Ajouter link page Contact-->
                 </ul>          
     </footer>
 </body>
