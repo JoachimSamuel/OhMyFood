@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+h1{
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-size: 28px;
+}
+h2{
+    font-family: 'Roboto';  
+    font-weight: 300;
+}
+p{
+    font-family: 'Roboto';  
+    font-weight: 300;
+}
+.center__align__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Mobil*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+/*Header*/
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header__imglogo{ /*Ajout width justify-content ne fonctionne plus */
+    padding: 1em;
+    position: relative;
+    z-index: auto;
+}
+.header__arrow{
+    
+}
+
+/*Main*/
+
+.background img{
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+main{
+    background-color: #F7F7F7;
+   z-index: 1;
+    border-radius: 100em;
+    
+}
+ .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+ }
+
+ .container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
+    width: 90%;
+    min-width: 70%;
+ }
+ .container:hover{
+    width: 30%;
+ }
+ .container__texte{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+ }
+ .container__texte h3{
+    font-family: 'Shrikhand';
+    margin-bottom: 0.5em;
+    
+ }
+ .container__texte p{
+    margin-top: 0px;
+ }
+.container__green:hover{
+    background-color: aquamarine;
+    width: 100%;
+}
+
+
+
+
+
+/*Footer*/
+.footer{
+    margin-top: 2em;
+    background-color:#353535;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.footer h3{
+    font-family: 'Shrikhand';
+    color:white;
+    margin-left: 2em;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.footer__ul{
+    margin-top: -1rem;
+   
+}
+.footer__ul__li{
+    color: white;
+    list-style: none;
+   
+}

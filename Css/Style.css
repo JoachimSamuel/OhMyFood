@@ -198,7 +198,9 @@ header p{
     right: 40px;
     top: 10px;
     font-size: 1.5em;
-    
+}
+.fa-heart{
+    font-weight: 100em;
 }
 .restaurants__card__heart:hover{ 
     color:#FF79DA;
