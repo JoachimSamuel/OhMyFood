@@ -9,6 +9,12 @@ h1{
 h2{
     font-family: 'Roboto';  
     font-weight: 300;
+    font-size:1em
+}
+h3{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
 }
 p{
     font-family: 'Roboto';  
@@ -68,30 +74,35 @@ main{
  }
 
  .container{
-    display: flex;
-    align-items: center;
     background-color: white;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 2em;
+    border-radius: 1em;
     width: 90%;
     min-width: 70%;
  }
  .container:hover{
     width: 30%;
  }
- .container__texte{
+
+ .container__title{
     display: flex;
     flex-direction: column;
     padding-left: 1em;
  }
- .container__texte h3{
-    font-family: 'Shrikhand';
-    margin-bottom: 0.5em;
-    
+ .container__texte{
+    display: flex;
+    justify-content: space-between;
  }
- .container__texte p{
+ .container__title h3{
+    margin-bottom: 0.5em; 
+ }
+ .container__title p{
     margin-top: 0px;
  }
+.container__texte b{
+    padding-right: 2em;
+    font-weight: 500;
+}
 .container__green:hover{
     background-color: aquamarine;
     width: 100%;
