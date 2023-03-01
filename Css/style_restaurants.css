@@ -11,6 +11,15 @@ h2{
     font-weight: 300;
     font-size:1em
 }
+h2::after{
+    content: "";
+    display: block;
+    background-color: #99E2D0;
+    width: 2rem;
+    height: 3px;
+    margin-top: 0.1em;
+    
+}
 h3{
     font-family: 'Roboto';
     font-size: 18px;
@@ -50,9 +59,6 @@ body{
     position: relative;
     z-index: auto;
 }
-.header__arrow{
-    
-}
 
 /*Main*/
 
@@ -61,34 +67,66 @@ body{
     aspect-ratio: 3/2;
 }
 main{
+    display: flex;
+    flex-direction: column;
     background-color: #F7F7F7;
-   z-index: 1;
-    border-radius: 100em;
-    
+    z-index: 1;
+    border-radius: 4em;
+    padding-top: 2em;
+    margin-top: -4em;
+    gap:1em;
 }
+
  .title{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
  }
-
- .container{
+ .container__2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position:absolute;
+    background-color:#99E2D0;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 83px;
+    border-radius: 1em;
+}
+.container__2 i{
+    border: solid white;
+    background-color: white;
+    color: #99E2D0;
+    border-radius: 100px;
+    margin-right: 1.5em;
+}
+ .container__title{
+    position: relative;
     background-color: white;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
     border-radius: 1em;
     width: 90%;
     min-width: 70%;
- }
- .container:hover{
-    width: 30%;
- }
-
- .container__title{
     display: flex;
     flex-direction: column;
     padding-left: 1em;
+    transition: margin-right 1s;
  }
+ .container__title:hover{
+    margin-right: 5em;
+}
+ .conatainer__2 p{
+    position: absolute;
+    justify-content: flex-end;
+    left: 80%;
+    top: 604px;
+    color: white;
+    border-radius: 100px;
+    background-color: blue;
+    font-size: 2em;
+}
+
  .container__texte{
     display: flex;
     justify-content: space-between;
@@ -103,10 +141,7 @@ main{
     padding-right: 2em;
     font-weight: 500;
 }
-.container__green:hover{
-    background-color: aquamarine;
-    width: 100%;
-}
+
 
 
 
