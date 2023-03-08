@@ -86,6 +86,7 @@ header p{
 .Réservezlemenu button:hover{
     background: linear-gradient(200.64deg, #9256dcd2 -5.2%, #ff79d9d1 110.74%);
     box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    
 }
 
 /* Section Fonctionnement */
@@ -115,6 +116,9 @@ header p{
 .fonctionnement__button:hover{
     background-color: #F5EDFF;
     color: #9356DC;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    opacity: 0.5;
+    transition-duration: 1s;
 }
 .fonctionnement__number{ 
     position: absolute;   /*POSITION absolute non responsive */
@@ -143,19 +147,21 @@ header p{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
+ 
 }
 .restaurants__title{
     margin-left: 1rem;
 }
 .restaurants__card{
-    aspect-ratio: 5/3;
+    aspect-ratio: 4/3;
     width: 21em;
     background-color: white;
     box-shadow: 0px 4px 15px 0px #0000001A;
     border-radius: 2em;
+    
 }
 .restaurants__card:hover{
-    transform: scale(1.1)
+    transform: scale(0.95 ,0.95)
 }
 .restaurants__card a{
     text-decoration: none;
@@ -197,21 +203,32 @@ header p{
     color: black;
    margin-top: -0.5em;
 }
-.fa-solid{
-    font-weight: 100;
-}
+
 .restaurants__card__heart{
     position: absolute;
     right: 40px;
     top: 10px;
     font-size: 1.5em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(#ff79da, #9356dc);
 }
-.fa-heart{
-    font-weight: 100em;
+.restaurants__card__heart__empty{
+    position: absolute;
+    z-index: 1;
+    color: black;
+    right: 40px;
+    top: 10px;
+    font-size: 1.5em;
+    background-color: #ffff;
 }
-.restaurants__card__heart:hover{ 
-    color:#FF79DA;
+.restaurants__card__heart__empty:hover{
+    display: none;
 }
+
+
+
+
 
 /*Footer*/
 .footer{
