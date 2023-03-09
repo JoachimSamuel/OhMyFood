@@ -6,6 +6,7 @@
     --boxShadowHover: 5px 4px 8px rgba(0, 0, 0, 1);
     --opacityHover: 0.5;
     --transitionDuration: 2s;
+    --backgroundLinearGradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 h1{
@@ -79,7 +80,7 @@ header p{
 }
 
 .Réservezlemenu button{
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background: var(--backgroundLinearGradient);
     box-shadow: var(--boxShadow);
     border-radius: var(--borderRadius);
     border: none;
@@ -121,8 +122,8 @@ header p{
     height: 4rem;
     margin: 1em;
 }
+
 .fonctionnement__button:hover{
-    color: #9356DC;
     box-shadow: var(--boxShadowHover);
     opacity: var(--opacityHover);
     transition-duration: var(--transitionDuration);
@@ -216,7 +217,7 @@ header p{
     font-size: 1.5em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(#ff79da, #9356dc);
+    background: var(--backgroundLinearGradient);
 }
 .restaurants__card__heart__empty{
     position: absolute;

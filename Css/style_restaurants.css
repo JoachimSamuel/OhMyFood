@@ -157,9 +157,25 @@ main{
     margin-left: 1em;
     transition-duration: 1500ms;
 }
-.menu__btn:hover .menu__check {
+.menu__btn:hover .menu__check{
     margin-right: 0em;
     visibility: visible;
+    
+}
+.menu__btn:hover .menu__check .fas{
+    animation: animationDote 2s;
+}
+@keyframes animationDote {
+   from { 
+    rotate: 0deg;
+}
+   to{
+    rotate: 360deg;
+   }
+    
+}
+.menu__btn:hover .fa-solid{
+    rotate: 360deg;
 }
 /*buton*/
 button{    
