@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+:root{
+    --borderRadius: 10px;
+    --boxShadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    --boxShadowHover: 5px 4px 8px rgba(0, 0, 0, 1);
+    --opacityHover: 0.5;
+    --transitionDuration: 2s;
+}
 
 h1{
     font-family: 'Shrikhand';
@@ -61,7 +68,7 @@ header p{
     flex-direction: column;
 }
 .Réservezlemenu h2{
-   width: 20ch;
+    width: 20ch;
     text-align: center;
     font-size: 24px;
 }
@@ -73,8 +80,8 @@ header p{
 
 .Réservezlemenu button{
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
     border: none;
     padding: 1em ;
 }
@@ -85,10 +92,9 @@ header p{
 }
 .Réservezlemenu button:hover{
 
-    box-shadow: 0px 4px 10px rgb(0, 0, 0);
-    box-shadow: 0px 4px 10px rgb(0 0 0);
-    opacity: 0.5;
-    transition-duration: 1s;
+    box-shadow: var(--boxShadowHover);
+    opacity: var(--opacityHover);
+    transition-duration: var(--transitionDuration);
 }
 
 /* Section Fonctionnement */
@@ -109,18 +115,17 @@ header p{
 .fonctionnement__button{
     display: flex;
     background: #F7F7F7;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
     width: 22rem;
     height: 4rem;
     margin: 1em;
 }
 .fonctionnement__button:hover{
-    background-color: #F5EDFF;
     color: #9356DC;
-    box-shadow: 0px 4px 10px rgb(0, 0, 0);
-    opacity: 0.5;
-    transition-duration: 1s;
+    box-shadow: var(--boxShadowHover);
+    opacity: var(--opacityHover);
+    transition-duration: var(--transitionDuration);
 }
 .fonctionnement__number{ 
     position: absolute;   /*POSITION absolute non responsive */
@@ -158,27 +163,22 @@ header p{
     aspect-ratio: 4/3;
     width: 21em;
     background-color: white;
-    box-shadow: 0px 4px 15px 0px #0000001A;
-    border-radius: 2em;
-    
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
 }
 .restaurants__card:hover{
-    transform: scale(0.95 ,0.95);
-    box-shadow: 0px 4px 10px rgb(0 0 0);
-    opacity: 0.5;
-    transition-duration: 1s;
+    box-shadow: var(--boxShadowHover);
+    opacity: var(--opacityHover);
+    transition-duration: var(--transitionDuration);
 }
 .restaurants__card a{
     text-decoration: none;
 }
-                    /* Ajouter hover__card Ici */
-
-
 .restaurants__card__image{
     height: 60%;
     position: relative;
     overflow: hidden;
-    border-radius: 2em 2em 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .new ::before  {
     content: "Nouveau";
@@ -206,7 +206,7 @@ header p{
 .restaurants__card__place {
     font-weight: 300;
     color: black;
-   margin-top: -0.5em;
+    margin-top: -0.5em;
 }
 
 .restaurants__card__heart{
