@@ -3,6 +3,7 @@
 
 :root{
     --couleurPrincipale:#99E2D0;
+    --animationDuration: 2s;
 }
 
 h1{
@@ -55,7 +56,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .header a{
     font-size: 25px;
@@ -93,12 +94,14 @@ main{
     justify-content: space-evenly;
     
  }
+ .animationPlat{
+    animation: animationPlat var(--animationDuration);
+ }
 
 .menu__btn {
     width: 80%;
     height: 70px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -163,7 +166,18 @@ main{
     
 }
 .menu__btn:hover .menu__check .fas{
-    animation: animationDote 2s;
+    animation: animationDote var(--animationDuration);
+}
+
+/*Animation*/
+@keyframes animationPlat{
+    from{ 
+        opacity: 0;
+        transform: translatex(-600px);
+    }
+    to{
+    opacity: 1;
+    }
 }
 @keyframes animationDote {
    from { 
@@ -174,9 +188,7 @@ main{
    }
     
 }
-.menu__btn:hover .fa-solid{
-    rotate: 360deg;
-}
+
 /*buton*/
 button{    
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
