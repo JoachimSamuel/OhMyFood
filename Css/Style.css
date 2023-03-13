@@ -7,6 +7,7 @@
     --opacityHover: 0.5;
     --transitionDuration: 2s;
     --backgroundLinearGradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    --animationTimes: 3s;
 }
 
 h1{
@@ -52,8 +53,10 @@ body{
 
 .header__location{    
     background-color: rgba(234, 234, 234, 1);
-    height: 3rem;
-    width: 100%;
+    text-align: center;
+    height: 2rem;
+    border-radius: var(--borderRadius);
+    gap: 0.5em;
 }
 .header__dote{
     height: 1rem;
@@ -121,12 +124,29 @@ header p{
     width: 22rem;
     height: 4rem;
     margin: 1em;
+    animation: animationFonctionnement var(--animationTimes);
 }
 
 .fonctionnement__button:hover{
     box-shadow: var(--boxShadowHover);
     opacity: var(--opacityHover);
     transition-duration: var(--transitionDuration);
+}
+.fonctionnement__button__2{
+    animation-delay: 1s;
+}
+.fonctionnement__button__3{
+    animation-delay: 2s;
+}
+
+/*ANIMATION*/
+@keyframes animationFonctionnement{
+    from{ 
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
 }
 .fonctionnement__number{ 
     position: absolute;   /*POSITION absolute non responsive */
@@ -166,11 +186,22 @@ header p{
     background-color: white;
     box-shadow: var(--boxShadow);
     border-radius: var(--borderRadius);
+    animation: animationCard var(--animationTimes);
 }
 .restaurants__card:hover{
     box-shadow: var(--boxShadowHover);
     opacity: var(--opacityHover);
     transition-duration: var(--transitionDuration);
+}
+/*ANIMATION*/
+@keyframes animationCard{
+    from{ 
+        opacity: 0;
+        transform: translatex(-800px);
+    }
+    to{
+    opacity: 1;
+    }
 }
 .restaurants__card a{
     text-decoration: none;
