@@ -4,6 +4,7 @@
 :root{
     --couleurPrincipale:#99E2D0;
     --animationDuration: 2s;
+    --animationDelay: 0s;
 }
 
 h1{
@@ -96,6 +97,7 @@ main{
  }
  .animationPlat{
     animation: animationPlat var(--animationDuration);
+    animation-delay: var(--animationDelay);
  }
 
 .menu__btn {
@@ -167,6 +169,7 @@ main{
 }
 .menu__btn:hover .menu__check .fas{
     animation: animationDote var(--animationDuration);
+    
 }
 
 /*Animation*/
