@@ -4,10 +4,10 @@
     --borderRadius: 10px;
     --boxShadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     --boxShadowHover: 5px 4px 8px rgba(0, 0, 0, 1);
-    --opacityHover: 0.5;
+    --opacityHover: 0.7;
     --transitionDuration: 0.5s;
     --backgroundLinearGradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    --animationTimes: 1s;
+    --animationTimes: 0.5s;
 }
 
 h1{
@@ -132,12 +132,12 @@ header p{
 }
 .fonctionnement__button__2{
     animation: animationFonctionnement2 var(--animationTimes);
-    animation-fill-mode: backwards;animation-delay: 1s;
+    animation-fill-mode: backwards;animation-delay: 0.5s;
 
 }
 .fonctionnement__button__3{
     animation: animationFonctionnement3 var(--animationTimes);
-    animation-fill-mode: backwards;animation-delay: 2s;
+    animation-fill-mode: backwards;animation-delay: 1s;
 }
 
 /*ANIMATION*/

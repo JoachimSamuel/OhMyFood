@@ -5,6 +5,7 @@
     --couleurPrincipale:#99E2D0;
     --animationDuration: 1s;
     --animationDelay: 0s;
+    --backgroundLinearGradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 h1{
@@ -93,6 +94,10 @@ main{
     align-items: center;
     justify-content: space-evenly; 
  }
+ .fa-regular{
+    font-size: 2em;
+ }
+ 
 .menu__btn {
     width: 90%;
     height: 70px;
