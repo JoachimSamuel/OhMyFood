@@ -7,7 +7,7 @@
     --opacityHover: 0.5;
     --transitionDuration: 0.5s;
     --backgroundLinearGradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    --animationTimes: 3s;
+    --animationTimes: 1s;
 }
 
 h1{
@@ -132,12 +132,12 @@ header p{
 }
 .fonctionnement__button__2{
     animation: animationFonctionnement2 var(--animationTimes);
-    animation-fill-mode: backwards;animation-delay: 0.5s;
+    animation-fill-mode: backwards;animation-delay: 1s;
 
 }
 .fonctionnement__button__3{
     animation: animationFonctionnement3 var(--animationTimes);
-    animation-fill-mode: backwards;animation-delay: 1s;
+    animation-fill-mode: backwards;animation-delay: 2s;
 }
 
 /*ANIMATION*/
@@ -256,7 +256,7 @@ header p{
     right: 40px;
     top: 10px;
     font-size: 1.5em;
-    color: var(--backgroundLinearGradient);
+    color: violet;
 }
 .restaurants__card__heart__empty{
     position: absolute;
@@ -265,8 +265,27 @@ header p{
     right: 40px;
     top: 10px;
     font-size: 1.5em;
+    background-color: white;
+}
+.restaurants__card__heart__empty:hover{
+    opacity: 0;
+    animation: animationHeart 0.3s;
+}
+.restaurants__card__heart__:hover{
+    opacity: 1;
+
 }
 
+/*Animation*/
+@keyframes animationHeart {
+    from  {
+        opacity: 1 ;
+    }
+    too{
+        opacity: 0;
+    }
+
+}
 
 
 /*Footer*/
