@@ -147,6 +147,10 @@ main{
     animation: animationPlat var(--animationDuration);
     animation-fill-mode: backwards;animation-delay: 1.6s;
 }
+.menu__btn__10{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 1.8s;
+}
 
 
 
