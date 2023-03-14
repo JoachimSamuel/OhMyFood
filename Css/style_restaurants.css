@@ -3,7 +3,7 @@
 
 :root{
     --couleurPrincipale:#99E2D0;
-    --animationDuration: 2s;
+    --animationDuration: 1s;
     --animationDelay: 0s;
 }
 
@@ -64,6 +64,7 @@ body{
     position: absolute;
     top: 22px;
     left:20px;
+    color: black;
 }
 
 .header__imglogo{ /*Ajout width justify-content ne fonctionne plus */
@@ -95,13 +96,8 @@ main{
     justify-content: space-evenly;
     
  }
- .animationPlat{
-    animation: animationPlat var(--animationDuration);
-    animation-delay: var(--animationDelay);
- }
-
 .menu__btn {
-    width: 80%;
+    width: 90%;
     height: 70px;
     margin:auto;
     display: flex;
@@ -113,9 +109,48 @@ main{
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 2px 4px 15px #dedede;
-    transition: 600ms ease-in-out;
-
+    transition: var(--animationDuration) ease-in-out;
 }
+.menu__btn__1{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 0.1s;
+}
+.menu__btn__2{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 0.2s;
+}
+.menu__btn__3{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 0.4s;
+}
+.menu__btn__4{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 0.6s;
+}
+.menu__btn__5{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 0.8s;
+}
+.menu__btn__6{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 1s;
+}
+.menu__btn__7{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 1.2s;
+}
+.menu__btn__8{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 1.4s;
+}
+.menu__btn__9{
+    animation: animationPlat var(--animationDuration);
+    animation-fill-mode: backwards;animation-delay: 1.6s;
+}
+
+
+
+
 .menu__text {
     display: flex;
     flex-direction: column;
@@ -160,7 +195,7 @@ main{
     font-size: 1.5em;
     margin-right: -3em;
     margin-left: 1em;
-    transition-duration: 1500ms;
+    transition-duration: 1000ms;
 }
 .menu__btn:hover .menu__check{
     margin-right: 0em;
@@ -168,15 +203,15 @@ main{
     
 }
 .menu__btn:hover .menu__check .fas{
-    animation: animationDote var(--animationDuration);
-    
+    animation: animationDote 1s;
 }
 
 /*Animation*/
 @keyframes animationPlat{
     from{ 
         opacity: 0;
-        transform: translatex(-600px);
+        transform: translatey(200px);
+
     }
     to{
     opacity: 1;
@@ -234,6 +269,9 @@ button{
     font-family: 'Shrikhand';
     color:white;
     margin-left: 2em;
+}
+.footer h3:hover{
+    color: #ff79d9d1 ;  /* linear-gradient(200.64deg, #9256dcd2 -5.2%, #ff79d9d1 110.74%); Voir avec mentor */
 }
 footer a{
     text-decoration: none;
