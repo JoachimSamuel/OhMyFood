@@ -8,6 +8,7 @@
     --transitionDuration: 0.5s;
     --backgroundLinearGradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     --animationTimes: 0.5s;
+    --marginleft: 2rem;
 }
 
 h1{
@@ -133,11 +134,11 @@ header p{
 /* Section Fonctionnement */
 .fonctionnement{
     background-color: white;
-    padding: 1em;
     margin-top: 2em;
 }
 .fonctionnement__title{
-    margin-bottom: 0rem;
+    margin-bottom: 0;
+    margin-left: var(--marginleft);
 }
 .fonctionnement__align{
     display: flex;
@@ -152,7 +153,8 @@ header p{
     border-radius: var(--borderRadius);
     width: 22rem;
     height: 4rem;
-    margin: 1em;
+    margin: 1rem;
+    margin-left: var(--marginleft);
     animation: animationFonctionnement1 var(--animationTimes);
 }
 
@@ -229,7 +231,7 @@ header p{
  
 }
 .restaurants__title{
-    margin-left: 1rem;
+    margin-left: var(--marginleft);
 }
 .restaurants__card{
     aspect-ratio: 4/3;
@@ -346,4 +348,23 @@ footer a{
     color: white;
     list-style: none;
    
+}
+
+
+
+
+
+@media screen and ( min-width: 992px)
+{
+.restaurants{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.restaurants__card {
+    aspect-ratio: 4/2;
+    flex: 45% 1 0;
+}
+.restaurants__card__image {
+    height: 90%;
+}
 }
