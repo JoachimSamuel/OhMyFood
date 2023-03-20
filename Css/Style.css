@@ -291,7 +291,6 @@ header p{
 }
 .restaurants__card__heart__:hover{
     opacity: 1;
-
 }
 
 /*Animation*/
@@ -302,7 +301,6 @@ header p{
     100% {
         opacity: 0;
     }
-
 }
 
 
