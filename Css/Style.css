@@ -134,15 +134,13 @@ header p{
     font-weight: 300;
 }
 
-.Réservezlemenu button{
+.Réservezlemenu a{
     background: var(--backgroundLinearGradient);
     box-shadow: var(--boxShadow);
     border-radius: var(--borderRadius);
     border: none;
     padding: 1em ;
     transition-duration: var(--transitionDuration);
-}
-.Réservezlemenu button a{
     text-decoration: none;
     font-family: 'Roboto';
     color: white;
