@@ -8,7 +8,7 @@
     --transitionDuration: 0.5s;
     --backgroundLinearGradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     --animationTimes: 0.5s;
-    --marginleft: 1rem;
+    --marginleft: 1em;
 }
 
 h1{
@@ -86,6 +86,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #F7F7F7;
+    margin: 0;
     min-height: 100vh;
 }
 
@@ -107,7 +108,7 @@ body{
     background-color: rgba(234, 234, 234, 1);
     text-align: center;
     height: 2rem;
-    border-radius: var(--borderRadius);
+    border: none;
     gap: 0.5em;
 }
 .header__dote{
@@ -145,7 +146,7 @@ header p{
     font-family: 'Roboto';
     color: white;
 }
-.Réservezlemenu button:hover{
+.Réservezlemenu a:hover{
     box-shadow: var(--boxShadowHover);
     opacity: var(--opacityHover);
 }
@@ -215,7 +216,7 @@ header p{
     margin-left: var(--marginleft);
 }
 .restaurants__card{
-    aspect-ratio: 4/3;
+    aspect-ratio: 16/9;
     width: 100%;
     max-width: 40em;
     margin: 1em;
@@ -286,9 +287,6 @@ header p{
 .restaurants__card__heart__empty:hover{
     opacity: 0;
     animation: animationHeart 0.3s;
-}
-.restaurants__card__heart__:hover{
-    opacity: 1;
 }
 
 /*Animation*/

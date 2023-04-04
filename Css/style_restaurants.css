@@ -113,46 +113,37 @@ main{
     border-radius: var(--borderRadius);
     overflow: hidden;
     box-shadow: 2px 4px 15px #dedede;
+    animation: animationPlat var(--animationDuration);
     transition: var(--animationDuration) ease-in-out;
 }
-.menu__btn__1{
-    animation: animationPlat var(--animationDuration);
+.menu__btn__1{    
     animation-fill-mode: backwards;animation-delay: 0.1s;
 }
 .menu__btn__2{
-    animation: animationPlat var(--animationDuration);
     animation-fill-mode: backwards;animation-delay: 0.2s;
 }
-.menu__btn__3{
-    animation: animationPlat var(--animationDuration);
+.menu__btn__3{   
     animation-fill-mode: backwards;animation-delay: 0.4s;
 }
-.menu__btn__4{
-    animation: animationPlat var(--animationDuration);
+.menu__btn__4{   
     animation-fill-mode: backwards;animation-delay: 0.6s;
 }
 .menu__btn__5{
-    animation: animationPlat var(--animationDuration);
     animation-fill-mode: backwards;animation-delay: 0.8s;
 }
-.menu__btn__6{
-    animation: animationPlat var(--animationDuration);
+.menu__btn__6{    
     animation-fill-mode: backwards;animation-delay: 1s;
 }
-.menu__btn__7{
-    animation: animationPlat var(--animationDuration);
+.menu__btn__7{   
     animation-fill-mode: backwards;animation-delay: 1.2s;
 }
-.menu__btn__8{
-    animation: animationPlat var(--animationDuration);
+.menu__btn__8{  
     animation-fill-mode: backwards;animation-delay: 1.4s;
 }
-.menu__btn__9{
-    animation: animationPlat var(--animationDuration);
+.menu__btn__9{ 
     animation-fill-mode: backwards;animation-delay: 1.6s;
 }
 .menu__btn__10{
-    animation: animationPlat var(--animationDuration);
     animation-fill-mode: backwards;animation-delay: 1.8s;
 }
 .menu__text {
